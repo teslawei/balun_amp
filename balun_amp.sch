@@ -1,0 +1,255 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Balun differential amplifier"
+Date "2019-06-29"
+Rev "01"
+Comp "Open instruments"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L diff_amp:LT1226 U?
+U 1 1 5D185963
+P 5950 3250
+F 0 "U?" H 6000 3500 50  0000 L CNN
+F 1 "LT1226" H 6000 3400 50  0000 L CNN
+F 2 "" H 6000 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm6161.pdf" H 6100 3550 50  0001 C CNN
+	1    5950 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L diff_amp:LT1226 U?
+U 1 1 5D1864F0
+P 5950 4450
+F 0 "U?" H 6000 4600 50  0000 L CNN
+F 1 "LT1226" H 6000 4700 50  0000 L CNN
+F 2 "" H 6000 4650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm6161.pdf" H 6100 4750 50  0001 C CNN
+	1    5950 4450
+	1    0    0    1   
+$EndComp
+$Comp
+L diff_amp:LT1226 U?
+U 1 1 5D186F9D
+P 7050 3900
+F 0 "U?" H 7394 3854 50  0000 L CNN
+F 1 "LT1226" H 7394 3945 50  0000 L CNN
+F 2 "" H 7100 4100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm6161.pdf" H 7200 4200 50  0001 C CNN
+	1    7050 3900
+	1    0    0    1   
+$EndComp
+$Comp
+L power:VSS #PWR?
+U 1 1 5D18A972
+P 6150 2350
+F 0 "#PWR?" H 6150 2200 50  0001 C CNN
+F 1 "VSS" H 6167 2523 50  0000 C CNN
+F 2 "" H 6150 2350 50  0001 C CNN
+F 3 "" H 6150 2350 50  0001 C CNN
+	1    6150 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5D18AE7C
+P 5750 2350
+F 0 "#PWR?" H 5750 2200 50  0001 C CNN
+F 1 "VDD" H 5767 2523 50  0000 C CNN
+F 2 "" H 5750 2350 50  0001 C CNN
+F 3 "" H 5750 2350 50  0001 C CNN
+	1    5750 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2350 5750 2450
+Text Label 5750 2450 0    50   ~ 0
+VDD
+Wire Wire Line
+	6150 2350 6150 2450
+Text Label 6150 2450 0    50   ~ 0
+VSS
+Text Label 5850 2950 0    50   ~ 0
+VDD
+Text Label 5850 4800 0    50   ~ 0
+VDD
+Wire Wire Line
+	5850 4750 5850 4800
+Wire Wire Line
+	5850 3550 5850 4150
+Text Label 5850 3900 2    50   ~ 0
+VSS
+$Comp
+L Device:R R?
+U 1 1 5D190A6D
+P 6500 3250
+F 0 "R?" V 6600 3250 50  0000 C CNN
+F 1 "R" V 6384 3250 50  0000 C CNN
+F 2 "" V 6430 3250 50  0001 C CNN
+F 3 "~" H 6500 3250 50  0001 C CNN
+	1    6500 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D19128C
+P 6500 4450
+F 0 "R?" V 6600 4450 50  0000 C CNN
+F 1 "R" V 6384 4450 50  0000 C CNN
+F 2 "" V 6430 4450 50  0001 C CNN
+F 3 "~" H 6500 4450 50  0001 C CNN
+	1    6500 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D19152E
+P 7050 3250
+F 0 "R?" V 7150 3250 50  0000 C CNN
+F 1 "R" V 6934 3250 50  0000 C CNN
+F 2 "" V 6980 3250 50  0001 C CNN
+F 3 "~" H 7050 3250 50  0001 C CNN
+	1    7050 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D191987
+P 7050 4450
+F 0 "R?" V 7200 4450 50  0000 C CNN
+F 1 "R" V 6934 4450 50  0000 C CNN
+F 2 "" V 6980 4450 50  0001 C CNN
+F 3 "~" H 7050 4450 50  0001 C CNN
+	1    7050 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 3250 6300 3250
+Wire Wire Line
+	6650 3250 6750 3250
+Wire Wire Line
+	7200 3250 7350 3250
+Wire Wire Line
+	7350 3250 7350 3900
+Wire Wire Line
+	7200 4450 7350 4450
+$Comp
+L power:GND #PWR?
+U 1 1 5D193745
+P 7350 4500
+F 0 "#PWR?" H 7350 4250 50  0001 C CNN
+F 1 "GND" H 7355 4327 50  0000 C CNN
+F 2 "" H 7350 4500 50  0001 C CNN
+F 3 "" H 7350 4500 50  0001 C CNN
+	1    7350 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 4500 7350 4450
+Wire Wire Line
+	6650 4450 6750 4450
+Wire Wire Line
+	6750 4000 6750 4450
+Connection ~ 6750 4450
+Wire Wire Line
+	6750 4450 6900 4450
+Wire Wire Line
+	6750 3800 6750 3250
+Connection ~ 6750 3250
+Wire Wire Line
+	6750 3250 6900 3250
+$Comp
+L Device:R R?
+U 1 1 5D194D77
+P 6300 3450
+F 0 "R?" V 6400 3450 50  0000 C CNN
+F 1 "R" V 6184 3450 50  0000 C CNN
+F 2 "" V 6230 3450 50  0001 C CNN
+F 3 "~" H 6300 3450 50  0001 C CNN
+	1    6300 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6300 3250 6300 3300
+Connection ~ 6300 3250
+Wire Wire Line
+	6300 3250 6350 3250
+Wire Wire Line
+	6300 3650 5650 3650
+Wire Wire Line
+	5650 3650 5650 3350
+Wire Wire Line
+	6300 3600 6300 3650
+$Comp
+L Device:R R?
+U 1 1 5D196A8A
+P 6300 3800
+F 0 "R?" V 6400 3800 50  0000 C CNN
+F 1 "R" V 6184 3800 50  0000 C CNN
+F 2 "" V 6230 3800 50  0001 C CNN
+F 3 "~" H 6300 3800 50  0001 C CNN
+	1    6300 3800
+	-1   0    0    1   
+$EndComp
+Connection ~ 6300 3650
+$Comp
+L Device:R R?
+U 1 1 5D197048
+P 6300 4200
+F 0 "R?" V 6400 4200 50  0000 C CNN
+F 1 "R" V 6184 4200 50  0000 C CNN
+F 2 "" V 6230 4200 50  0001 C CNN
+F 3 "~" H 6300 4200 50  0001 C CNN
+	1    6300 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6300 3950 6300 4000
+Wire Wire Line
+	6300 4350 6300 4450
+Wire Wire Line
+	6300 4450 6250 4450
+Wire Wire Line
+	6350 4450 6300 4450
+Connection ~ 6300 4450
+Wire Wire Line
+	6300 4000 5650 4000
+Wire Wire Line
+	5650 4000 5650 4350
+Connection ~ 6300 4000
+Wire Wire Line
+	6300 4000 6300 4050
+$Comp
+L Device:R R?
+U 1 1 5D1A31A1
+P 5250 3150
+F 0 "R?" V 5350 3150 50  0000 C CNN
+F 1 "R" V 5134 3150 50  0000 C CNN
+F 2 "" V 5180 3150 50  0001 C CNN
+F 3 "~" H 5250 3150 50  0001 C CNN
+	1    5250 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 3150 5650 3150
+$Comp
+L Device:R R?
+U 1 1 5D1A3A01
+P 5250 4550
+F 0 "R?" V 5350 4550 50  0000 C CNN
+F 1 "R" V 5134 4550 50  0000 C CNN
+F 2 "" V 5180 4550 50  0001 C CNN
+F 3 "~" H 5250 4550 50  0001 C CNN
+	1    5250 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 4550 5650 4550
+$EndSCHEMATC
