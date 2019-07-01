@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LT1226
+D Single High Speed Operational Amplifier, DIP-8/SOIC-8
+K single opamp
+F http://www.ti.com/lit/ds/symlink/lm6161.pdf
+$ENDCMP
+#
+#End Doc Library
