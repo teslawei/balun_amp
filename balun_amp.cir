@@ -1,0 +1,46 @@
+.title KiCad schematic
+U1 NC_01 Net-_R2-Pad1_ Net-_R8-Pad1_ "/VSS" NC_02 Net-_R2-Pad2_ "/VDD" NC_03 LT1226
+U2 NC_04 Net-_R1-Pad2_ Net-_R7-Pad1_ "/VSS" NC_05 Net-_R1-Pad1_ "/VDD" NC_06 LT1226
+U3 NC_07 Net-_R4-Pad1_ Net-_R3-Pad1_ "/VSS" NC_08 Net-_J2-Pad1_ "/VDD" NC_09 LT1226
+R4 Net-_R4-Pad1_ Net-_R2-Pad2_ R
+R3 Net-_R3-Pad1_ Net-_R1-Pad1_ R
+R6 Net-_J2-Pad1_ Net-_R4-Pad1_ R
+R5 GND Net-_R3-Pad1_ R
+R2 Net-_R2-Pad1_ Net-_R2-Pad2_ R
+Rg1 Net-_R1-Pad2_ Net-_R2-Pad1_ R
+R1 Net-_R1-Pad1_ Net-_R1-Pad2_ R
+R8 Net-_R8-Pad1_ Net-_J1-Pad1_ R
+R7 Net-_R7-Pad1_ Net-_J1-Pad2_ R
+U5 +5V -BATT Net-_L3-Pad1_ NC_10 Net-_L2-Pad1_ NMA0512SC
+L2 Net-_L2-Pad1_ "/VDD" L
+C5 GND "/VDD" C
+L3 Net-_L3-Pad1_ "/VSS" L
+C6 "/VSS" GND C
+U4 "/VBUS" Net-_R10-Pad1_ -BATT Net-_R9-Pad1_ Net-_R11-Pad1_ -BATT -BATT Net-_D2-Pad2_ Net-_R12-Pad1_ +BATT BQ2404x
+J3 "/VBUS" NC_11 NC_12 NC_13 -BATT -BATT USB_B_Micro
+BT1 +BATT -BATT Battery_Cell
+R9 Net-_R9-Pad1_ -BATT 2k
+R10 Net-_R10-Pad1_ -BATT 1k
+R11 Net-_R11-Pad1_ Net-_D1-Pad1_ 1.5k
+D1 Net-_D1-Pad1_ +BATT LED
+R13 +BATT Net-_D2-Pad1_ 1.5k
+D2 Net-_D2-Pad1_ Net-_D2-Pad2_ LED
+R12 Net-_R12-Pad1_ -BATT 10k
+C1 "/VBUS" -BATT C
+C2 +BATT -BATT C
+U6 +BATT +5V NC_14 Net-_D3-Pad1_ -BATT +BATT Net-_R14-Pad2_ -BATT Net-_L1-Pad2_ -BATT TPS61027
+L1 +BATT Net-_L1-Pad2_ 6.8uH
+C3 +BATT -BATT 10u
+R14 +BATT Net-_R14-Pad2_ 8.5k
+R15 Net-_R14-Pad2_ -BATT 1.5k
+C4 +5V -BATT 2.2u
+C11 +5V -BATT 47u
+R16 +5V Net-_D3-Pad2_ 1.5k
+D3 Net-_D3-Pad1_ Net-_D3-Pad2_ LED
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Input
+J2 Net-_J2-Pad1_ GND Output
+C8 GND "/VDD" C
+C9 "/VDD" GND C
+C7 "/VSS" GND C
+C10 "/VBUS" -BATT C
+.end
