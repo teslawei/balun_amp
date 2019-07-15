@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name balun_amp)(type Legacy)(uri ${KIPRJMOD}/balun_amp.lib)(options "")(descr ""))
+  (lib (name balun_amp-rescue)(type Legacy)(uri ${KIPRJMOD}/balun_amp-rescue.lib)(options "")(descr ""))
 )
